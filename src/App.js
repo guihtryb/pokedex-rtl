@@ -75,18 +75,18 @@ class App extends Component {
       <Switch>
         <Route
           exact
-          path="/"
+          path="/pokedex-rtl"
           render={ ({ match }) => this.renderPokedex(match) }
         />
         <Route
-          path="/favorites"
+          path="/pokedex-rtl/favorites"
           render={ () => <FavoritePokemons pokemons={ favoritePokemons } /> }
         />
         <Route
-          path="/pokemons/:id"
+          path="/pokedex-rtl/pokemons/:id"
           render={ ({ match }) => this.renderPokemonDetails(match) }
         />
-        <Route path="/about" component={ About } />
+        <Route path="/pokedex-rtl/about" component={ About } />
         <Route component={ NotFound } />
       </Switch>
     );
@@ -98,9 +98,9 @@ class App extends Component {
         <header>
           <h1>Pokédex</h1>
           <nav>
-            <Link className="link" to="/">{`Home`}</Link>
-            <Link className="link" to="/about">{`About`}</Link>
-            <Link className="link" to="/favorites">{`Favorite Pokémons`}</Link>
+            <Link className="link" to="/pokedex-rtl">{`Home`}</Link>
+            <Link className="link" to="/pokedex-rtl/about">{`About`}</Link>
+            <Link className="link" to="/pokedex-rtl/favorites">{`Favorite Pokémons`}</Link>
           </nav>
         </header>
         {this.renderRoutes()}
