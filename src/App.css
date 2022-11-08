@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -5,4 +9,40 @@
 .link {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+header {
+  background-color: #aa2f19;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 64px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  text-decoration: underline;
+}
+
+nav a {
+  text-decoration: none;
+  color: #FFF;
+  padding: 12px;
+  background-color: #000;
+  border-radius: 8px;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all ease 0.2s;
+  margin-top: 12px;
+}
+
+button:hover {
+  box-shadow: 0 0 5px 2px rgb(0, 0, 0);
 }

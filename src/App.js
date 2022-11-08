@@ -95,12 +95,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Pokédex</h1>
-        <nav>
-          <Link className="link" to="/">{`Home`}</Link>
-          <Link className="link" to="/about">{`About`}</Link>
-          <Link className="link" to="/favorites">{`Favorite Pokémons`}</Link>
-        </nav>
+        <header>
+          <h1>Pokédex</h1>
+          <nav>
+            <Link className="link" to="/">{`Home`}</Link>
+            <Link className="link" to="/about">{`About`}</Link>
+            <Link className="link" to="/favorites">{`Favorite Pokémons`}</Link>
+          </nav>
+        </header>
         {this.renderRoutes()}
       </div>
     );
